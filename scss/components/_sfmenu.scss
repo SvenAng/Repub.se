@@ -1,0 +1,81 @@
+$sf-back-color-active: #d5d166;
+$sf-back-color: #f77136;// #e25331;
+$sf-text-color-active: #000;
+$sf-text-color: #fff;
+$sf-text-color-hover: #000;
+
+
+ul.sf-menu li a{
+    color: $sf-text-color;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+ul.sf-menu li a:hover{
+    color: $sf-text-color-active;
+}
+ul.sf-menu li a.active{
+    color: $sf-text-color-active;
+}
+ul.sf-menu{
+	float: right;
+}
+.sf-menu li {
+    background-color: none;
+    margin-right: 3px !important;
+}
+ul.sf-menu li a{
+    background-color: $sf-back-color;
+    padding: 0.5rem;
+    color: $sf-text-color;
+}
+ul.sf-menu li a:hover{
+    background-color: $sf-back-color-active; 
+    color: $sf-text-color-hover;
+}
+
+ul.sf-menu li ul{
+    background-color: $sf-back-color; 
+    color: $sf-text-color;
+}
+//==== sf level 2 ===
+ul.sf-menu li ul li a{
+    color: $sf-text-color;
+}
+ul.sf-menu li ul li, 
+ul.sf-menu li ul li a{
+    background: none;   
+}
+ul.sf-menu li ul{
+    padding: 0.6rem 0;
+}
+ul.sf-menu li ul li a:hover{
+    background-color: $sf-back-color-active;
+}
+ul.sf-menu li ul li:hover{
+    background-color: inherit; 
+    color: inherit;
+    
+}
+ul.sf-menu li.sf-depth-2{
+    margin: 0.2rem 0;   
+}
+ul.sf-menu li ul li a{
+    text-transform: inherit;
+    color: $sf-text-color;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+}
+
+//Active levels---------------------------
+
+ul.sf-menu li.active-trail a.sf-depth-1,
+ul.sf-menu a.sf-depth-2.active{
+        color: $sf-text-color-active;
+        background-color: $sf-back-color-active;
+}
+
+

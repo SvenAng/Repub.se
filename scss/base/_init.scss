@@ -1,0 +1,305 @@
+
+body{
+	background: $black;
+}
+.page{
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:top;
+}
+
+// ===================== Header Svart meny ========================
+
+.l-header-region, .mainmenu{
+    background: #000; 
+}
+.kiv-logo{
+    text-align: right;
+    margin-top: 0.4rem;
+}
+.kiv-logo img, .kiv-logo-down img{
+    width: 140px;
+    height: auto;
+}
+.l-header-region{
+    padding: $column-gutter/2;
+}
+.l-header-region .logo img{
+    padding: 0;
+    width: 291px;
+    height: auto;
+}
+.kiv-logo-upper{
+    text-align: right;
+}
+
+.tab-bar .menu-icon span::after {
+    box-shadow: 0 0 0 2px #fff, 0 10px 0 2px #fff, 0 20px 0 2px #fff ;
+    
+}
+// =======================================================================
+
+.footer-wrapper{
+	color: $white;
+	background-size: cover;
+	padding-top: $column-gutter;
+	padding-bottom: $column-gutter;
+	padding-left: $column-gutter/3;
+	padding-right: $column-gutter/3;
+	background: #000000 url("../images/RePl-backrund.jpg") no-repeat center ;
+	color: #ffffff;
+}
+.footer-wrapper{
+	h1, h2, h3, h4, h5{
+		color: $white;	
+	}
+}
+
+.l-main,.l-featured, .l-triptych{
+	background: $white;
+}
+
+.l-main{
+	padding-top: $column-gutter/2;
+}
+.mozaik-event{
+	padding-top: $column-gutter/2;
+	
+}
+.mozaik-event .views-row-mozaik{
+	padding-bottom: $column-gutter/2;
+}
+.mozaik-event h3{
+	font-size: 1.3rem;	
+}
+.mozaik-event a p{
+	color: $body-font-color;	
+}
+.mozaik-event .mozaik-image{
+	margin-bottom: $column-gutter/2;
+}
+.l-footer{
+	text-align: center;		
+}
+.footer-fourth{
+	/*position: relative;*/
+	
+}
+.l-footer-columns-bottom{
+	border-top: 1px solid #e5e5e5;
+	padding-top: $column-gutter/2;
+	margin-top: $column-gutter/2;
+}
+.l-footer-columns .footer-fourth .block{
+	  /*margin-top: $column-gutter*3;*/
+		
+}
+.l-footer-columns-bottom div{
+	margin-bottom: $column-gutter/3;
+}
+.l-footer-columns .footer-fourth .block img{
+	width: 28%;
+	height: 28%;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.l-footer-columns .footer-first .block img{
+	height: auto;
+	/*height: 28%;*/
+}
+
+
+.l-footer-columns-bottom p{
+	margin: 0;
+	line-height: 1.4;
+}
+.l-featured-i .invisible-plug{
+	display: block;
+	height: 1rem;
+}
+.top-bar-section{
+	float: right;
+}
+.sidebar p, .mozaik-event p, .front-right p{
+	font-size: $paragraph-font-size*0.9;
+	line-height: $paragraph-line-height*0.9;
+}
+.mozaik-tags a{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	background: $primary-color;
+	color: $white;
+	font-size: $paragraph-font-size*0.8;
+}
+.mozaik-tags a{
+	
+}
+.right-off-canvas-menu{
+	/*background: #5a5958;*/
+	background: $primary-color;
+	padding-left: $column-gutter/2;
+    padding-right: $column-gutter/2;
+    padding-bottom: $column-gutter/2;
+    padding-top: 0.3rem;
+    width: 12.5rem;
+}
+
+.right-off-canvas-menu ul{
+	margin-bottom: 0;
+	margin-top: 0;
+    margin-left: 0;
+}
+.right-off-canvas-menu ul li ul{
+	margin-left: 0;
+	margin-top: 0;
+    margin-left: 0.5rem;
+    line-height: 1rem;
+}
+.right-off-canvas-menu ul li{
+    list-style-type: none;
+    padding: 0.6rem 0;
+    margin: 0;
+    border-bottom: 1px dotted #ffffff;
+    text-align: left;
+}
+.right-off-canvas-menu ul li ul li{
+    border-bottom: none;
+//    padding: 0;
+}
+.right-off-canvas-menu li a{
+	color: $white;
+//	line-height: 0.85rem;
+	font-size: 1rem;
+	/*font-family:  $font-karla;*/
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.right-off-canvas-menu li a:hover{
+    text-decoration: underline;   
+}
+.right-off-canvas-menu ul li li a{
+	color: $white;
+    text-transform: none;
+    font-style: italic;
+    font-size: 0.8rem;
+//    line-height: 5px !important;
+}
+
+/*Blogg*/
+.view-blog .views-row{
+	margin-bottom: 2rem;
+}
+.submitted-date {
+    border-right: 1px solid #c2c2c2;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.submitted-date .day, .submitted-date .month, .submitted-date .year{
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	color: #898989;
+}
+
+.submitted-date .day{
+	font-size: 2.2rem;
+	line-height: 2rem;
+	font-weight: bold;
+	letter-spacing: -0.9px;
+}
+.blog-author{
+	color: #898989;
+	font-size: 0.7rem;
+	line-height: 0.8rem;
+	text-transform: uppercase;
+	margin-bottom: 0.4rem;
+}
+.node-blog h2{
+	margin: 0;
+	font-size: $h2-font-size;
+	line-height: $h2-font-size*1.2;
+	margin-bottom: 0.2rem;
+}
+.node-blog h1{
+	margin: 0;
+	font-size: $h2-font-size;
+}
+
+.page-blog #page-title,
+.page-blogs #page-title{
+	display: none;
+}
+
+.node-blog .teaser-readmore{
+	background:  $primary-color;
+	color: #fff;
+	font-weight: 300;
+	padding: 6px 8px;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	/*margin-bottom: 2rem;*/
+	/*display: block;*/
+}
+.page-blog .blog-row{
+	margin-bottom: $column-gutter;
+}
+.l-gallery .frontpage-big-gallery .flexslider{
+	background: none;
+	border: none;
+	margin: 0;
+}
+
+/*Overrides, extra mediaqueries*/
+
+@media only screen and (min-width: 64.063em){ 
+	
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	
+}
+@media only screen and (max-width: 40em) { 
+    .tab-bar .menu-icon{
+        padding-right: 1rem;
+    }
+    .kiv-logo{
+//        text-align: left;
+        margin-top: 0.5rem;
+    }
+//    .logo{
+//        text-align: center;
+//    }
+	.submitted-date {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	.submitted-date .day{
+		display: inline-block;
+	}	
+	.submitted-date .month{
+		display: inline-block;
+	}
+	.submitted-date .year{
+		display: inline-block;
+	}
+	
+	.submitted-date .day, .submitted-date .month, .submitted-date .year {
+	   font-weight: normal;
+	    font-size: 0.8rem;
+	    text-align: left;
+	}
+	 h1,h2,h3,h4,h5,h6 {
+         font-weight: 300;
+    }
+    .l-featured-i .invisible-plug {
+        display: none;
+    }
+}
+
