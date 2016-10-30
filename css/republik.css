@@ -2201,52 +2201,56 @@ ul.sf-menu li ul {
   color: #fff;
 }
 
-/* line 44, ../scss/components/_sfmenu.scss */
+/* line 45, ../scss/components/_sfmenu.scss */
 ul.sf-menu li ul li a {
   color: #fff;
 }
 
-/* line 47, ../scss/components/_sfmenu.scss */
+/* line 48, ../scss/components/_sfmenu.scss */
+ul.sf-menu li ul li {
+  border-bottom: dotted 1px #fff;
+}
+
+/* line 51, ../scss/components/_sfmenu.scss */
 ul.sf-menu li ul li,
 ul.sf-menu li ul li a {
   background: none;
 }
 
-/* line 51, ../scss/components/_sfmenu.scss */
+/* line 55, ../scss/components/_sfmenu.scss */
 ul.sf-menu li ul {
-  padding: 0.6rem 0;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
 }
 
-/* line 54, ../scss/components/_sfmenu.scss */
+/* line 60, ../scss/components/_sfmenu.scss */
 ul.sf-menu li ul li a:hover {
-  background-color: #d5d166;
+  background-color: #f77136;
 }
 
-/* line 57, ../scss/components/_sfmenu.scss */
+/* line 63, ../scss/components/_sfmenu.scss */
 ul.sf-menu li ul li:hover {
-  background-color: inherit;
+  background-color: none;
   color: inherit;
 }
 
-/* line 62, ../scss/components/_sfmenu.scss */
-ul.sf-menu li.sf-depth-2 {
-  margin: 0.2rem 0;
-}
-
-/* line 65, ../scss/components/_sfmenu.scss */
+/* line 72, ../scss/components/_sfmenu.scss */
 ul.sf-menu li ul li a {
   text-transform: inherit;
   color: #fff;
   font-size: 0.9rem;
   line-height: 1.2rem;
-  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
 }
 
-/* line 75, ../scss/components/_sfmenu.scss */
-ul.sf-menu li.active-trail a.sf-depth-1,
-ul.sf-menu a.sf-depth-2.active {
+/* line 82, ../scss/components/_sfmenu.scss */
+ul.sf-menu li.active-trail a.sf-depth-1 {
   color: #000;
   background-color: #d5d166;
+}
+
+/* line 86, ../scss/components/_sfmenu.scss */
+ul.sf-menu a.sf-depth-2.active {
+  color: #000000;
 }
 
 /* line 129, ../../zurb_foundation/scss/foundation/components/_accordion.scss */
@@ -9648,46 +9652,51 @@ body {
   background-position: top;
 }
 
-/* line 16, ../scss/base/_init.scss */
+/* line 15, ../scss/base/_init.scss */
+.flexslider {
+  margin: 1.40625rem 0 1.40625rem 0;
+}
+
+/* line 22, ../scss/base/_init.scss */
 .l-header-region, .mainmenu {
   background: #000;
 }
 
-/* line 19, ../scss/base/_init.scss */
+/* line 25, ../scss/base/_init.scss */
 .kiv-logo {
   text-align: right;
   margin-top: 0.4rem;
 }
 
-/* line 23, ../scss/base/_init.scss */
+/* line 29, ../scss/base/_init.scss */
 .kiv-logo img, .kiv-logo-down img {
   width: 140px;
   height: auto;
 }
 
-/* line 27, ../scss/base/_init.scss */
+/* line 33, ../scss/base/_init.scss */
 .l-header-region {
   padding: 1.40625rem;
 }
 
-/* line 30, ../scss/base/_init.scss */
+/* line 36, ../scss/base/_init.scss */
 .l-header-region .logo img {
   padding: 0;
   width: 291px;
   height: auto;
 }
 
-/* line 35, ../scss/base/_init.scss */
+/* line 41, ../scss/base/_init.scss */
 .kiv-logo-upper {
   text-align: right;
 }
 
-/* line 39, ../scss/base/_init.scss */
+/* line 45, ../scss/base/_init.scss */
 .tab-bar .menu-icon span::after {
   box-shadow: 0 0 0 2px #fff, 0 10px 0 2px #fff, 0 20px 0 2px #fff;
 }
 
-/* line 45, ../scss/base/_init.scss */
+/* line 51, ../scss/base/_init.scss */
 .footer-wrapper {
   color: #FFFFFF;
   background-size: cover;
@@ -9699,74 +9708,74 @@ body {
   color: #ffffff;
 }
 
-/* line 56, ../scss/base/_init.scss */
+/* line 62, ../scss/base/_init.scss */
 .footer-wrapper h1, .footer-wrapper h2, .footer-wrapper h3, .footer-wrapper h4, .footer-wrapper h5 {
   color: #FFFFFF;
 }
 
-/* line 61, ../scss/base/_init.scss */
+/* line 67, ../scss/base/_init.scss */
 .l-main, .l-featured, .l-triptych {
   background: #FFFFFF;
 }
 
-/* line 65, ../scss/base/_init.scss */
+/* line 71, ../scss/base/_init.scss */
 .l-main {
   padding-top: 1.40625rem;
 }
 
-/* line 68, ../scss/base/_init.scss */
+/* line 74, ../scss/base/_init.scss */
 .mozaik-event {
   padding-top: 1.40625rem;
 }
 
-/* line 72, ../scss/base/_init.scss */
+/* line 78, ../scss/base/_init.scss */
 .mozaik-event .views-row-mozaik {
   padding-bottom: 1.40625rem;
 }
 
-/* line 75, ../scss/base/_init.scss */
+/* line 81, ../scss/base/_init.scss */
 .mozaik-event h3 {
   font-size: 1.3rem;
 }
 
-/* line 78, ../scss/base/_init.scss */
+/* line 84, ../scss/base/_init.scss */
 .mozaik-event a p {
   color: #222;
 }
 
-/* line 81, ../scss/base/_init.scss */
+/* line 87, ../scss/base/_init.scss */
 .mozaik-event .mozaik-image {
   margin-bottom: 1.40625rem;
 }
 
-/* line 84, ../scss/base/_init.scss */
+/* line 90, ../scss/base/_init.scss */
 .l-footer {
   text-align: center;
 }
 
-/* line 87, ../scss/base/_init.scss */
+/* line 93, ../scss/base/_init.scss */
 .footer-fourth {
   /*position: relative;*/
 }
 
-/* line 91, ../scss/base/_init.scss */
+/* line 97, ../scss/base/_init.scss */
 .l-footer-columns-bottom {
   border-top: 1px solid #e5e5e5;
   padding-top: 1.40625rem;
   margin-top: 1.40625rem;
 }
 
-/* line 96, ../scss/base/_init.scss */
+/* line 102, ../scss/base/_init.scss */
 .l-footer-columns .footer-fourth .block {
   /*margin-top: $column-gutter*3;*/
 }
 
-/* line 100, ../scss/base/_init.scss */
+/* line 106, ../scss/base/_init.scss */
 .l-footer-columns-bottom div {
   margin-bottom: 0.9375rem;
 }
 
-/* line 103, ../scss/base/_init.scss */
+/* line 109, ../scss/base/_init.scss */
 .l-footer-columns .footer-fourth .block img {
   width: 28%;
   height: 28%;
@@ -9774,36 +9783,36 @@ body {
   margin-left: 3px;
 }
 
-/* line 109, ../scss/base/_init.scss */
+/* line 115, ../scss/base/_init.scss */
 .l-footer-columns .footer-first .block img {
   height: auto;
   /*height: 28%;*/
 }
 
-/* line 115, ../scss/base/_init.scss */
+/* line 121, ../scss/base/_init.scss */
 .l-footer-columns-bottom p {
   margin: 0;
   line-height: 1.4;
 }
 
-/* line 119, ../scss/base/_init.scss */
+/* line 125, ../scss/base/_init.scss */
 .l-featured-i .invisible-plug {
   display: block;
   height: 1rem;
 }
 
-/* line 123, ../scss/base/_init.scss */
+/* line 129, ../scss/base/_init.scss */
 .top-bar-section {
   float: right;
 }
 
-/* line 126, ../scss/base/_init.scss */
+/* line 132, ../scss/base/_init.scss */
 .sidebar p, .mozaik-event p, .front-right p {
   font-size: 0.9rem;
   line-height: 1.71;
 }
 
-/* line 130, ../scss/base/_init.scss */
+/* line 136, ../scss/base/_init.scss */
 .mozaik-tags a {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
@@ -9814,7 +9823,7 @@ body {
   font-size: 0.8rem;
 }
 
-/* line 142, ../scss/base/_init.scss */
+/* line 148, ../scss/base/_init.scss */
 .right-off-canvas-menu {
   /*background: #5a5958;*/
   background: #f77136;
@@ -9825,14 +9834,14 @@ body {
   width: 12.5rem;
 }
 
-/* line 152, ../scss/base/_init.scss */
+/* line 158, ../scss/base/_init.scss */
 .right-off-canvas-menu ul {
   margin-bottom: 0;
   margin-top: 0;
   margin-left: 0;
 }
 
-/* line 157, ../scss/base/_init.scss */
+/* line 163, ../scss/base/_init.scss */
 .right-off-canvas-menu ul li ul {
   margin-left: 0;
   margin-top: 0;
@@ -9840,7 +9849,7 @@ body {
   line-height: 1rem;
 }
 
-/* line 163, ../scss/base/_init.scss */
+/* line 169, ../scss/base/_init.scss */
 .right-off-canvas-menu ul li {
   list-style-type: none;
   padding: 0.6rem 0;
@@ -9849,12 +9858,12 @@ body {
   text-align: left;
 }
 
-/* line 170, ../scss/base/_init.scss */
+/* line 176, ../scss/base/_init.scss */
 .right-off-canvas-menu ul li ul li {
   border-bottom: none;
 }
 
-/* line 174, ../scss/base/_init.scss */
+/* line 180, ../scss/base/_init.scss */
 .right-off-canvas-menu li a {
   color: #FFFFFF;
   font-size: 1rem;
@@ -9863,12 +9872,12 @@ body {
   text-transform: uppercase;
 }
 
-/* line 182, ../scss/base/_init.scss */
+/* line 188, ../scss/base/_init.scss */
 .right-off-canvas-menu li a:hover {
   text-decoration: underline;
 }
 
-/* line 185, ../scss/base/_init.scss */
+/* line 191, ../scss/base/_init.scss */
 .right-off-canvas-menu ul li li a {
   color: #FFFFFF;
   text-transform: none;
@@ -9877,12 +9886,12 @@ body {
 }
 
 /*Blogg*/
-/* line 194, ../scss/base/_init.scss */
+/* line 200, ../scss/base/_init.scss */
 .view-blog .views-row {
   margin-bottom: 2rem;
 }
 
-/* line 197, ../scss/base/_init.scss */
+/* line 203, ../scss/base/_init.scss */
 .submitted-date {
   border-right: 1px solid #c2c2c2;
   padding-right: 12px;
@@ -9891,7 +9900,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 204, ../scss/base/_init.scss */
+/* line 210, ../scss/base/_init.scss */
 .submitted-date .day, .submitted-date .month, .submitted-date .year {
   text-align: center;
   display: block;
@@ -9899,7 +9908,7 @@ body {
   color: #898989;
 }
 
-/* line 211, ../scss/base/_init.scss */
+/* line 217, ../scss/base/_init.scss */
 .submitted-date .day {
   font-size: 2.2rem;
   line-height: 2rem;
@@ -9907,7 +9916,7 @@ body {
   letter-spacing: -0.9px;
 }
 
-/* line 217, ../scss/base/_init.scss */
+/* line 223, ../scss/base/_init.scss */
 .blog-author {
   color: #898989;
   font-size: 0.7rem;
@@ -9916,7 +9925,7 @@ body {
   margin-bottom: 0.4rem;
 }
 
-/* line 224, ../scss/base/_init.scss */
+/* line 230, ../scss/base/_init.scss */
 .node-blog h2 {
   margin: 0;
   font-size: 2.3125rem;
@@ -9924,19 +9933,19 @@ body {
   margin-bottom: 0.2rem;
 }
 
-/* line 230, ../scss/base/_init.scss */
+/* line 236, ../scss/base/_init.scss */
 .node-blog h1 {
   margin: 0;
   font-size: 2.3125rem;
 }
 
-/* line 235, ../scss/base/_init.scss */
+/* line 241, ../scss/base/_init.scss */
 .page-blog #page-title,
 .page-blogs #page-title {
   display: none;
 }
 
-/* line 240, ../scss/base/_init.scss */
+/* line 246, ../scss/base/_init.scss */
 .node-blog .teaser-readmore {
   background: #f77136;
   color: #fff;
@@ -9948,12 +9957,12 @@ body {
   /*display: block;*/
 }
 
-/* line 250, ../scss/base/_init.scss */
+/* line 256, ../scss/base/_init.scss */
 .page-blog .blog-row {
   margin-bottom: 2.8125rem;
 }
 
-/* line 253, ../scss/base/_init.scss */
+/* line 259, ../scss/base/_init.scss */
 .l-gallery .frontpage-big-gallery .flexslider {
   background: none;
   border: none;
@@ -9962,51 +9971,51 @@ body {
 
 /*Overrides, extra mediaqueries*/
 @media only screen and (max-width: 40em) {
-  /* line 268, ../scss/base/_init.scss */
+  /* line 274, ../scss/base/_init.scss */
   .tab-bar .menu-icon {
     padding-right: 1rem;
   }
 
-  /* line 271, ../scss/base/_init.scss */
+  /* line 277, ../scss/base/_init.scss */
   .kiv-logo {
     margin-top: 0.5rem;
   }
 
-  /* line 278, ../scss/base/_init.scss */
+  /* line 284, ../scss/base/_init.scss */
   .submitted-date {
     border: none;
     margin: 0;
     padding: 0;
   }
 
-  /* line 283, ../scss/base/_init.scss */
+  /* line 289, ../scss/base/_init.scss */
   .submitted-date .day {
     display: inline-block;
   }
 
-  /* line 286, ../scss/base/_init.scss */
+  /* line 292, ../scss/base/_init.scss */
   .submitted-date .month {
     display: inline-block;
   }
 
-  /* line 289, ../scss/base/_init.scss */
+  /* line 295, ../scss/base/_init.scss */
   .submitted-date .year {
     display: inline-block;
   }
 
-  /* line 293, ../scss/base/_init.scss */
+  /* line 299, ../scss/base/_init.scss */
   .submitted-date .day, .submitted-date .month, .submitted-date .year {
     font-weight: normal;
     font-size: 0.8rem;
     text-align: left;
   }
 
-  /* line 298, ../scss/base/_init.scss */
+  /* line 304, ../scss/base/_init.scss */
   h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
   }
 
-  /* line 301, ../scss/base/_init.scss */
+  /* line 307, ../scss/base/_init.scss */
   .l-featured-i .invisible-plug {
     display: none;
   }

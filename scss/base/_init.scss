@@ -10,6 +10,12 @@ body{
 	background-size:cover;
 	background-position:top;
 }
+//==================== Flexslider =====================
+
+.flexslider {
+    margin: $column-gutter/2 0 $column-gutter/2 0;
+}
+
 
 // ===================== Header Svart meny ========================
 
@@ -300,6 +306,9 @@ body{
     }
     .l-featured-i .invisible-plug {
         display: none;
+    }
+    .flexslider {
+//        margin: $column-gutter/4 0 $column-gutter/4 0;
     }
 }
 

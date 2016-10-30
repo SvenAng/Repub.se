@@ -39,43 +39,52 @@ ul.sf-menu li a:hover{
 ul.sf-menu li ul{
     background-color: $sf-back-color; 
     color: $sf-text-color;
+    
 }
 //==== sf level 2 ===
 ul.sf-menu li ul li a{
     color: $sf-text-color;
+}
+ul.sf-menu li ul li{
+    border-bottom: dotted 1px #fff;
 }
 ul.sf-menu li ul li, 
 ul.sf-menu li ul li a{
     background: none;   
 }
 ul.sf-menu li ul{
-    padding: 0.6rem 0;
+//    padding: 0.6rem 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
 }
 ul.sf-menu li ul li a:hover{
-    background-color: $sf-back-color-active;
+    background-color: $sf-back-color;
 }
 ul.sf-menu li ul li:hover{
-    background-color: inherit; 
+    background-color: none; 
     color: inherit;
+//    text-decoration: underline;
     
 }
 ul.sf-menu li.sf-depth-2{
-    margin: 0.2rem 0;   
+//    margin: 0.2rem 0 0.2rem 0;   
 }
 ul.sf-menu li ul li a{
     text-transform: inherit;
     color: $sf-text-color;
     font-size: 0.9rem;
     line-height: 1.2rem;
-    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+//    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
 }
 
 //Active levels---------------------------
 
-ul.sf-menu li.active-trail a.sf-depth-1,
+ul.sf-menu li.active-trail a.sf-depth-1{
+    color: $sf-text-color-active;
+    background-color: $sf-back-color-active;
+}
 ul.sf-menu a.sf-depth-2.active{
-        color: $sf-text-color-active;
-        background-color: $sf-back-color-active;
+    color: $black;
 }
 
 
