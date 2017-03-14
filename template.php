@@ -2,10 +2,21 @@
 
 /**
  * Implements template_preprocess_html().
+ 
+ Jaddar in en del JS i slutet på sidan.
+ TODO. Masonery och imagesloaded behövs inte på alla sidor...
  */
-function STARTER_preprocess_html(&$variables) {
-}
+function republik_preprocess_html(&$variables) {
+//    $path = drupal_get_path('theme', 'republik');
+//    drupal_add_js($path . '/js/masonry.pkgd.min.js', array('scope' => 'bottom_scripts', 'weight' => -2, 'preprocess' => FALSE));
+//    drupal_add_js($path . '/js/imagesloaded.pkgd.min.js', array('scope' => 'bottom_scripts', 'weight' => -3, 'preprocess' => FALSE));
+    //drupal_add_js($path . '/js/republik.js', array('scope' => 'bottom_scripts', 'weight' => -1, 'preprocess' => FALSE));
 
+}
+function republik_process_html(&$vars) {
+    $vars['bottom_scripts'] = drupal_get_js('bottom_scripts');
+    $vars['top_scripts'] = drupal_get_js('top_scripts');
+}
 
 
 

@@ -11,12 +11,170 @@ body{
 	background-size:cover;
 	background-position:top;
 }
+//===================== filter ====================
+.view-filters{
+    .views-exposed-form .views-exposed-widget .form-submit{
+        margin: 0;
+    }
+    
+}
+button, .button {
+    padding: $column-gutter/8 $column-gutter/8;
+    font-size: 0.8rem;
+}
+select{
+    padding: 0
+}
+//===================== MOZAIKEN ======================
+.content-under{
+    padding-left: $column-gutter/4;
+    padding-right: $column-gutter/4;
+    .mozaik{
+        .column{
+            padding: $column-gutter/4;
+        }
+    }
+    .row{
+        margin: 0 ;//$column-gutter/4;
+    }
+}
+.mozaik{
+    .m_item{
+        padding: $column-gutter/12;    
+        background:white;
+        -o-transition:background .6s ease-in;
+        -ms-transition:background .6s ease-in;
+        -moz-transition:background .6s ease-in;
+        -webkit-transition:background .6s ease-in;
+        transition: background .6s ease-in;
+    }
+    .m_item:hover{
+        background: $silver;
+    }
+    
+    @media only screen and (min-width: 40.063em){
+        
+        .column{
+            padding-right: 0;
+        }
+    }
+        
+    @media only screen and (max-width: 40em) { 
+        .column{
+            padding-right: $column-gutter/2;
+        }
+    }
+    .views-row{
+        margin-bottom: $column-gutter/2;
+    }
+    h3{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: $column-gutter/8;
+    }
+    a .body p{
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        margin-bottom: 0;
+    }
+    a h3, a p{
+        color: $body-font-color;  
+    }
+    a img{
+        width: 100%;
+        height: auto;
+        margin-bottom: $column-gutter/5;
+    }
+    .tags {
+        //    margin-bottom: 0.4rem;
+        .item-list{
+            ul{
+                margin-bottom: 0;
+            }
+
+            li{
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                font-size: 0.75rem;
+                
+                a{
+                    font-size: 0.75rem;
+                    margin-right: 0.2rem;
+                    background: $primary-color;
+                    padding: 3px 6px;
+                    color: $white;
+                }
+                a:hover{
+                    background: $black;
+                }
+            }
+        }
+    }
+}
+
+.mozaik-tags a{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    background: $primary-color;
+    color: $white;
+    font-size: $paragraph-font-size*0.8;
+}
+.mozaik-tags a{
+
+}
+
+
 //==================== Flexslider =====================
 
 .flexslider {
     margin: $column-gutter/2 0 $column-gutter/2 0;
+    h2,p, a{
+        color: $white;
+    }
+    p{
+        margin-bottom: $column-gutter/3;
+    }
+    .big-gallery-content{
+        width: 45%;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .read-more{
+//        display: block;
+//        width: 100%;
+        a{
+            background: $black;
+            padding: 5px;
+            font-size: 0.85rem;
+//            text-align: right;
+//            display: block;
+//            width: 5rem;
+        }
+        a:hover{
+            background: orange;
+           
+        }
+    }
+    .gallery-image{
+        height: 250px;
+    }
 }
+//================== Startsidans galleri ======================
 
+.l-gallery .frontpage-big-gallery .flexslider{
+    background: none;
+    border: none;
+    margin: 0;
+}
+.frontpage-big-gallery img{
+    //    max-height: 350px;
+    //    width: auto;
+}
 
 // ===================== Header Svart meny ========================
 
@@ -141,18 +299,8 @@ body{
 	font-size: $paragraph-font-size*0.9;
 	line-height: $paragraph-line-height*0.9;
 }
-.mozaik-tags a{
-	padding-top: 0.2rem;
-	padding-bottom: 0.2rem;
-	padding-left: 0.4rem;
-	padding-right: 0.4rem;
-	background: $primary-color;
-	color: $white;
-	font-size: $paragraph-font-size*0.8;
-}
-.mozaik-tags a{
-	
-}
+
+
 .right-off-canvas-menu{
 	/*background: #5a5958;*/
 	background: $primary-color;
@@ -258,17 +406,11 @@ body{
 	padding: 6px 8px;
 	font-size: 0.7rem;
 	text-transform: uppercase;
-	/*margin-bottom: 2rem;*/
-	/*display: block;*/
 }
 .page-blog .blog-row{
 	margin-bottom: $column-gutter;
 }
-.l-gallery .frontpage-big-gallery .flexslider{
-	background: none;
-	border: none;
-	margin: 0;
-}
+
 
 /*Overrides, extra mediaqueries*/
 

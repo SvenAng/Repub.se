@@ -100,19 +100,15 @@ if ($is_front){
     </section>
     <!--/.l-help -->
     <?php endif; ?>
-    <?php $sokvag = url($_GET['q']);?>
-
-    <!--  <?php if (url($_GET['q']) == "/startsida"): ?>
-<div class="glugg-front-page"><?php //print $sokvag;?></div>
-<?php endif; ?> -->
+    
     <!--.l-main -->
-    <!-- Detta borde gå att fixa med $is_front variabeln -->
-    <?php if (empty($page['sidebar_second']) && (url($_GET['q']) != "/startsida")) : ?>
-    <?php $main_grid_repub = "medium-8 medium-centered"; ?>  
-    <?php elseif((url($_GET['q']) == "/startsida")): ?>  
-    <?php $main_grid_repub = "medium-12"; ?>
+    
+    <?php if (empty($page['sidebar_second']) && (url($_GET['q']) != "/inspiration")) : ?>
+        <?php $main_grid_repub = "medium-8 medium-centered"; ?>
+    <?php elseif((url($_GET['q']) == "/inspiration") && empty($page['sidebar_second'])): ?>
+    <?php $main_grid_repub = "medium-12 content-under"; ?>
     <?php else: ?>
-    <?php $main_grid_repub = "medium-8"; ?>
+        <?php $main_grid_repub = "medium-8"; ?>
     <?php endif; ?>
 
 
@@ -154,8 +150,7 @@ if ($is_front){
             <?php endif; ?>
 
             <?php print render($page['content']); ?>
-        </div>
-        <!--/.l-main region -->
+        
 
         <?php if (!empty($page['sidebar_first'])): ?>
         <aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns sidebar">
@@ -168,6 +163,17 @@ if ($is_front){
             <?php print render($page['sidebar_second']); ?>
         </aside>
         <?php endif; ?>
+        
+        
+        </div>
+        
+        
+        <?php if (!empty($page['content_under'])): ?>
+        <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> content-under columns small-12">
+            <?php print render($page['content_under']); ?>
+        </aside>
+        <?php endif; ?>
+        <!--/.l-main region -->
     </main>
     <!--/.l-main -->
 

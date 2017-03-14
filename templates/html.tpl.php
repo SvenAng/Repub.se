@@ -51,7 +51,9 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+    
   <?php print $scripts; ?>
+    <?php print $top_scripts; ?>
   <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -78,6 +80,7 @@
       $(document).foundation();
     })(jQuery, Drupal, this, this.document);
   </script>
+        <?php print $bottom_scripts; ?>
   </div>
   </div>
 </body>

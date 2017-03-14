@@ -65,6 +65,7 @@ regions[highlighted]         = Highlighted
 regions[gallery]            = Galleri Bildspel stort
 regions[featured]            = Topbildspel
 regions[content]             = Content
+regions[content_under]             = Content for Viewsblock
 regions[sidebar_first]       = Left Sidebar
 regions[sidebar_second]      = Right Sidebar
 regions[offcanvas]      = Offcanvas Meny
