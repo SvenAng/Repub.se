@@ -3,13 +3,16 @@ body{
 	background: $black;
     
 }
+h1,h2,h3{
+    color: $black;
+}
 .page{
 	background-repeat:no-repeat;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
-	background-position:top;
+//	-webkit-background-size:cover;
+//	-moz-background-size:cover;
+//	-o-background-size:cover;
+//	background-size:cover;
+	background-position:top right;
 }
 //===================== filter ====================
 .view-filters{
@@ -19,16 +22,34 @@ body{
     
 }
 button, .button {
-    padding: $column-gutter/8 $column-gutter/8;
+    padding: $column-gutter/5 $column-gutter/3;
     font-size: 0.8rem;
+//    margin: 0
+}
+.views-exposed-form .views-exposed-widget .form-submit{
+    margin: 0;
 }
 select{
-    padding: 0
+    height: 2.2rem;
+}
+.pagination-centered{
+    margin-top: $column-gutter/2;
+    margin-bottom: $column-gutter/2;
+    
 }
 //===================== MOZAIKEN ======================
+
+.front-page-mozaik{
+    padding-right: 0;
+}
+@media only screen and (max-width: 40em) { 
+    .front-page-mozaik{
+        padding-right: $column-gutter/2;
+    }
+}
 .content-under{
-    padding-left: $column-gutter/4;
-    padding-right: $column-gutter/4;
+    padding-left: $column-gutter/2;
+    padding-right: $column-gutter/2;
     .mozaik{
         .column{
             padding: $column-gutter/4;
@@ -38,18 +59,81 @@ select{
         margin: 0 ;//$column-gutter/4;
     }
 }
+
+.mozaik-front{
+    @media only screen and (min-width: 64.063em){ 
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        columns: 3;
+    }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+    }
+    @media only screen and (max-width: 40em) { 
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+    }
+
+    -webkit-column-gap: $column-gutter/2;
+    -moz-column-gap: $column-gutter/2;
+    column-gap: $column-gutter/2;
+
+}
+.mozaik-full-page .view-content{
+    @media only screen and (min-width: 64.063em){ 
+        -webkit-columns: 4;
+        -moz-columns: 4;
+        columns: 4;
+    }
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+    }
+    @media only screen and (max-width: 40em) { 
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+    }
+
+    -webkit-column-gap: $column-gutter/2;
+    -moz-column-gap: $column-gutter/2;
+    column-gap: $column-gutter/2;
+
+}
 .mozaik{
+    .view-content{
+        //        Fix för mozilla //        .mozaik-container:last-child, .mozaik-container:first-child{
+        .mozaik-container{
+            display: inline-block;
+        }
+        .mozaik-container{
+            
+            padding-bottom: $column-gutter/2;
+            .m_item{
+                -webkit-column-break-inside: avoid;
+                page-break-inside: avoid;
+                break-inside: avoid;  
+            }
+        }    
+    }
+    
     .m_item{
-        padding: $column-gutter/12;    
-        background:white;
-        -o-transition:background .6s ease-in;
-        -ms-transition:background .6s ease-in;
-        -moz-transition:background .6s ease-in;
-        -webkit-transition:background .6s ease-in;
-        transition: background .6s ease-in;
+        p,h3{
+        -o-transition:color .4s ease-in;
+        -ms-transition:color .4s ease-in;
+        -moz-transition:color .4s ease-in;
+        -webkit-transition:color .4s ease-in;
+        transition: color .4s ease-in;
+        }
     }
     .m_item:hover{
-        background: $silver;
+        p,h3{
+            color: $primary-color;
+        }
     }
     
     @media only screen and (min-width: 40.063em){
@@ -425,12 +509,9 @@ select{
         padding-right: 1rem;
     }
     .kiv-logo{
-//        text-align: left;
         margin-top: 0.5rem;
     }
-//    .logo{
-//        text-align: center;
-//    }
+
 	.submitted-date {
 		border: none;
 		margin: 0;
@@ -457,8 +538,36 @@ select{
     .l-featured-i .invisible-plug {
         display: none;
     }
-    .flexslider {
-//        margin: $column-gutter/4 0 $column-gutter/4 0;
+    .views-exposed-form .views-exposed-widget{
+        padding: 0 0.3rem 0 0;
+    }
+    button, .button {
+        padding: $column-gutter/5 $column-gutter/4;
+    }
+    .flexslider{
+        .gallery-image{
+            height: auto;
+        }
+        
+        .big-gallery-content {
+            padding: $column-gutter/4 $column-gutter/8; 
+            width: 100%;
+            background: rgba(167, 40, 61, 0.8);
+            p{
+                line-height: 1.4rem; 
+                text-align: center;
+                
+            }
+            h2{
+                font-weight: 500;
+                text-align: center;
+            }
+            .read-more{
+                text-align: center;
+//                margin-bottom: $column-gutter/4;
+                
+            }
+        }
     }
 }
 
