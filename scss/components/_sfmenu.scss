@@ -76,6 +76,10 @@ ul.sf-menu li ul li a{
     line-height: 1.2rem;
 //    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
 }
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul{
+    top: 1.9rem;
+}
 
 //Active levels---------------------------
 

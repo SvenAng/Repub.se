@@ -32,17 +32,24 @@ if ($is_front){
                 
                 <div class="columns medium-3 hide-for-small kiv-logo large-3 large-offset-1">
                     <a href="http://kulturivast.se" target="_blank"><img src="/sites/all/themes/republik/images/kivlogo.png"></a>
+                    <div class="search-box"><?php print render($page['sok_ruta']); ?></div>
                 </div>
                 
                 <nav class="tab-bar small-3 medium-1 columns hide-for-large-up">
                     <a class="right-off-canvas-toggle menu-icon" href="#" ><span></span></a>
                 </nav>
+                
+                
+                
             </div>
+            
             <div class="row nedrerad">
                 <div class="columns small-12 show-for-small kiv-logo-down">
                     <a href="http://kulturivast.se" target="_blank"><img src="/sites/all/themes/republik/images/kivlogo.png"></a>
+                    <?php print render($page['sok_ruta']); ?>
                 </div>
             </div>
+            
         </section>
         <div class="row mainmenu">
             <nav class="columns large-12 main-nav hide-for-medium-down">
@@ -107,6 +114,8 @@ if ($is_front){
         // denna lägger till en extra class på startsidan för styrning av marginaler på startsidan
         if($is_front == 1){
             $extra ="front-page-mozaik";
+        }else{
+            $extra ="";
         }
     ?>
     
@@ -183,7 +192,15 @@ if ($is_front){
         <!--/.l-main region -->
     </main>
     <!--/.l-main -->
-
+    <section>
+        <div class="undersida row">
+            <?php if (!empty($page['undersida'])): ?>
+                <div class="">
+                    <?php print render($page['undersida']); ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </section>
     <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
     <!--.triptych-->
     <section class="l-triptych row">

@@ -60,6 +60,7 @@ stylesheets[all][] = css/republik.css
 ;   <?php print render($page['header']); ?>
 
 regions[header]              = Header
+regions[sok_ruta]              = Sökruta
 regions[help]                = Help
 regions[highlighted]         = Highlighted
 regions[gallery]            = Galleri Bildspel stort
@@ -69,6 +70,7 @@ regions[content_under]             = Content for Viewsblock
 regions[sidebar_first]       = Left Sidebar
 regions[sidebar_second]      = Right Sidebar
 regions[offcanvas]      = Offcanvas Meny
+regions[undersida]             = Undersidornas position
 regions[triptych_first]      = Callout one
 regions[footer_firstcolumn]  = Footer one
 regions[footer_secondcolumn] = Footer two
