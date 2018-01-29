@@ -552,7 +552,12 @@ select{
 .page-blog .blog-row{
 	margin-bottom: $column-gutter;
 }
-
+.view-bottenbanner{
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
 
 /*Overrides, extra mediaqueries*/
 
