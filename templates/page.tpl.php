@@ -122,7 +122,7 @@ if ($is_front){
 
     
     <?php if (empty($page['sidebar_second']) && (url($_GET['q']) != "/inspiration")) : ?>
-        <?php $main_grid_repub = "medium-8 medium-centered"; ?>
+        <?php $main_grid_repub = "medium-12 medium-centered"; ?>
     <?php elseif((url($_GET['q']) == "/inspiration") && empty($page['sidebar_second'])): ?>
         <?php $main_grid_repub = "medium-12 content-under"; ?>
     <?php else: ?>

@@ -218,6 +218,11 @@ function republik_preprocess_page(&$variables) {
     $variables['sidebar_first_grid'] = 'medium-3 medium-pull-9';
     $variables['sidebar_sec_grid'] = '';
   }
+    elseif (empty($left) && empty($right)) {
+        $variables['main_grid'] = 'medium-12';
+        $variables['sidebar_first_grid'] = '';
+        $variables['sidebar_sec_grid'] = '';
+    }
   else {
     $variables['main_grid'] = '';
     $variables['sidebar_first_grid'] = '';
